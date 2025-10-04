@@ -1,0 +1,9 @@
+weights_path: ""
+test_path: ""
+save_path: ""
+dataloader: ""
+loss: ""
+model_type: ""
+num_workers: 
+img_size:  
+batch_size:

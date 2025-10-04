@@ -1,0 +1,36 @@
+train_path: ""
+val_path: ""
+save_path: ""
+dataloader: ""
+prefetch_factor: 
+pin_memory:
+persistent_workers:
+num_workers: 
+learning_rate: 
+momentum:
+weight_decay: 
+num_epochs: 
+batch_size: 
+nesterov: 
+checkpoint_path:
+scheduler: ""
+loss: ""
+model_type: ""
+optimizer: ""
+img_size: 
+### Scheduler option 1: ReduceLROnPlateau ###
+factor:
+patience:
+verbose:
+### Scheduler option 2: StepLR ###
+stepLR_step_size: 
+stepLR_gamma: 
+### Scheduler option 3: CosineAnnealingWarmRestarts ###
+T_0:
+T_mult:
+### Scheduler option 4: CosineWarmupConstantLR ###
+warmup_steps:
+### Scheduler option 5: CosineWarmupExponentialDecay ###
+warmup_steps: 
+gamma: 
+cooldown_start: 
