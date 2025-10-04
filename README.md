@@ -1,5 +1,5 @@
 # Ovarify
-### Pelvic ultrasound frame classification, ovary segmentation, follicle segmentation
+### A deep learning model for automatic calculation of ovarian morphological features from pelvic ultrasonography
 For questions/issues contact:
 * Eeshaan Rehani: eer4001@med.cornell.edu
 * Iman Hajirasouliha: imh2003@med.cornell.edu
