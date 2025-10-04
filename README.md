@@ -1,5 +1,8 @@
 # Ovarify
 ### Pelvic ultrasound frame classification, ovary segmentation, follicle segmentation
+For questions/issues contact:
+* Eeshaan Rehani: eer4001@med.cornell.edu
+* Iman Hajirasouliha: imh2003@med.cornell.edu
 
 ## Environment setup
 1. Set up the conda environment - `conda env create -f environment.yml`.
