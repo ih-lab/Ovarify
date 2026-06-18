@@ -1,0 +1,6 @@
+.vscode/
+__pycache__/
+*.ipynb
+*.ipynb_checkpoints
+*.py[codz]
+about.txt

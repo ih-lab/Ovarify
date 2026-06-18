@@ -1,5 +1,5 @@
 # Ovarify
-### A deep learning model for automatic calculation of ovarian morphological features from pelvic ultrasonography
+### Pelvic ultrasound frame classification, ovary segmentation, follicle segmentation
 For questions/issues contact:
 * Eeshaan Rehani: eer4001@med.cornell.edu
 * Iman Hajirasouliha: imh2003@med.cornell.edu
@@ -32,10 +32,19 @@ Other parameter descriptions in `test.py` - see `./skeleton_configs/test.yaml` f
 ## Calculating ovarian volume
 `python calc_volume.py {root_folder} {cf_spreadsheet} {save_path}`
 * `{root_folder}`: output of ovarian segmentation
+* `{cf_spreadsheet}`: conversion factor csv file with mandatory columns `[Ultrasound, CF]`
+* `{save_path}`: folder to save calculated volumes in
 
-## Counting follicles
+## Counting follicles (2D)
 `python count_follicles.py {root_folder} {save_path}`
 * `{root_folder}`: output of follicle segmentation
+* `{save_path}`: folder to save follicle count results in
+
+## Counting follicles (3D)
+`python fnpo.py {root_folder} {save_folder} {save_prefix}`
+* `{root_folder}`: output of follicle segmentation
+* `{save_folder}`: folder to save output csv and intermediate files in
+* `{save_prefix}`: identifier for output csv
 
 ## How do I structure my directories for training?
 | File tree \
@@ -43,4 +52,4 @@ Other parameter descriptions in `test.py` - see `./skeleton_configs/test.yaml` f
 | ---- root_dir _(This should consist of only ovarian masks or follicle masks)_ \
 | ---- | ---- {Ultrasound}\_{Frame} \
 | ---- | ---- | ---- {Ultrasound}\_{Frame}\_orignal.tif/jpg/png/etc. \
-| ---- | ---- | ---- {Ultrasound}\_{Frame}\_mask.tif/jpg.png/etc. _(This is optional; only necessary for training)_
+| ---- | ---- | ---- {Ultrasound}\_{Frame}\_mask.tif/jpg/png/etc. _(This is optional; only necessary for training)_
