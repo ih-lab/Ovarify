@@ -6,7 +6,7 @@ For questions/issues contact:
 
 ## Environment setup
 1. Set up the conda environment - `conda env create -f environment.yml`.
-2. Activate the conda environment - `conda activate ovarify`.`
+2. Activate the conda environment - `conda activate ovarify`.
 
 ## Training
 ### Segmentation
